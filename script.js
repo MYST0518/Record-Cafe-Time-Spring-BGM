@@ -97,7 +97,7 @@ function initPlaylist() {
     });
 }
 
-const BASE_URL = 'https://pub-8e280363fb0b4b6390ba4e9befe14244.r2.dev/'; // Updated to R2 bucket URL
+const BASE_URL = 'https://pub-8e280363fb0b4b6390ba4e9befe14244.r2.dev/Record%20Cafe%20Time%20Spring%20BGM%E3%82%B3%E3%83%B3%E3%83%86%E3%82%B9%E3%83%88/'; // Updated with folder path
 
 function loadTrack(index, autoPlay = false) {
     currentTrackIndex = index;
