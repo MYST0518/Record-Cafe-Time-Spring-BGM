@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Record Cafe Time Spring BGMコンテスト</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div id="bg-container"></div>
+    <div id="overlay"></div>
+
+    <main class="main-container">
+        <!-- Player Section -->
+        <section class="player-section">
+            <header class="header">
+                <h1>Record Cafe Time</h1>
+                <p>Spring BGM contest</p>
+                <div class="coffee-steam">
+                    <span class="steam-line"></span>
+                    <span class="steam-line" style="animation-delay: 0.5s"></span>
+                    <span class="steam-line" style="animation-delay: 1s"></span>
+                </div>
+            </header>
+
+            <div class="now-playing-visual">
+                <div class="disk-wrapper">
+                    <div class="disk" id="disk">
+                        <div class="disk-center"></div>
+                    </div>
+                </div>
+                <div class="track-info">
+                    <h2 id="track-name">Select a track</h2>
+                    <p id="track-artist">Morning Mist #モーミス</p>
+                </div>
+            </div>
+
+            <div class="controls">
+                <div class="progress-container">
+                    <div class="progress-bar" id="progress-bar">
+                        <div class="progress-fill" id="progress-fill"></div>
+                    </div>
+                    <div class="time-info">
+                        <span id="current-time">0:00</span>
+                        <span id="duration">0:00</span>
+                    </div>
+                </div>
+
+                <div class="buttons">
+                    <button class="btn" id="prev-btn" title="Previous"><i class="fas fa-step-backward"></i></button>
+                    <button class="btn btn-play" id="play-btn" title="Play"><i class="fas fa-play"></i></button>
+                    <button class="btn" id="next-btn" title="Next"><i class="fas fa-step-forward"></i></button>
+                </div>
+
+                <div class="volume-container">
+                    <i class="fas fa-volume-down"></i>
+                    <input type="range" class="volume-slider" id="volume-slider" min="0" max="1" step="0.1" value="0.7">
+                    <i class="fas fa-volume-up"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- Playlist Section -->
+        <section class="playlist-section">
+            <div class="playlist-header">
+                <h2>Playlist</h2>
+                <span>60 Tracks</span>
+            </div>
+            <div class="playlist-content" id="playlist-content">
+                <!-- Tracks will be injected by JS -->
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
