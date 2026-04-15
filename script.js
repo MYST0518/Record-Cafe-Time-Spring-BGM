@@ -58,7 +58,8 @@ const tracks = [
     { name: "琥珀色の春の午後", artist: "みつじ", file: "琥珀色の春の午後_みつじ.mp3" },
     { name: "笑顔路", artist: "AIVID", file: "笑顔路_AIVID.m4a" },
     { name: "過ぎ去りし日々に口笛を", artist: "真夜中のラジオ", file: "過ぎ去りし日々に口笛を_真夜中のラジオ.mp3" },
-    { name: "遠い日の花吹雪", artist: "天汐香弓", file: "遠い日の花吹雪_天汐香弓.mp3" }
+    { name: "遠い日の花吹雪", artist: "天汐香弓", file: "遠い日の花吹雪_天汐香弓.mp3" },
+    { name: "春の静寂（しじま）に針を落として", artist: "ぬくいずみたまこ", file: "春の静寂（しじま）に針を落として_ぬくいずみたまこ.mp3" }
 ];
 
 let currentTrackIndex = 0;
