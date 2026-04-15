@@ -77,11 +77,13 @@ const currentTimeEl = document.getElementById('current-time');
 const durationEl = document.getElementById('duration');
 const volumeSlider = document.getElementById('volume-slider');
 const playlistContent = document.getElementById('playlist-content');
+const trackCountEl = document.getElementById('track-count');
 const disk = document.getElementById('disk');
 
 // Initialize Playlist
 function initPlaylist() {
     playlistContent.innerHTML = '';
+    trackCountEl.textContent = `${tracks.length} Tracks`;
     tracks.forEach((track, index) => {
         const item = document.createElement('div');
         item.className = `track-item ${index === currentTrackIndex ? 'active' : ''}`;
